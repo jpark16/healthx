@@ -10,6 +10,57 @@ import ProductList from "./pages/productList/ProductList";
 import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
 
+export const userData = [
+  {
+    name: "7PM",
+    "Temperature Reading": 99.5,
+  },
+  {
+    name: "8PM",
+    "Temperature Reading": 97,
+  },
+  {
+    name: "9PM",
+    "Temperature Reading": 98.5,
+  },
+  {
+    name: "10PM",
+    "Temperature Reading": 97,
+  },
+  {
+    name: "11PM",
+    "Temperature Reading": 97,
+  },
+  {
+    name: "12AM",
+    "Temperature Reading": 98.5,
+  },
+  {
+    name: "1AM",
+    "Temperature Reading": 97,
+  },
+  {
+    name: "2AM",
+    "Temperature Reading": 96.5,
+  },
+  {
+    name: "3AM",
+    "Temperature Reading": 97,
+  },
+  {
+    name: "4AM",
+    "Temperature Reading": 97.5,
+  },
+  {
+    name: "5AM",
+    "Temperature Reading": 96.5,
+  },
+  {
+    name: "6AM",
+    "Temperature Reading": 97,
+  },
+];
+
 function App() {
   return (
     <Router>
@@ -43,5 +94,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;
