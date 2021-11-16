@@ -1,10 +1,30 @@
 import "./newUser.css";
+const axios = require('axios');
 
+async function makePostCall() {
+  let params = {
+    "ID": "1234",
+    "DOB": "01/01/1999",
+    "First Name": "Trump",
+    "Last Name": "Biden",
+    "Sig Health": "Diabetes"
+  }
+
+  let res = await axios.post('https://y0j9peczeg.execute-api.us-east-1.amazonaws.com/info_post', params);
+
+  console.log(res.data);
+
+  return res.data;
+}
 export default function NewUser() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    makePostCall();
+  }
   return (
     <div className="newUser">
       <h1 className="newUserTitle">New User</h1>
-      <form className="newUserForm">
+      <form className="newUserForm" onSubmit={handleSubmit}>
         <div className="newUserItem">
           <label>Username</label>
           <input type="text" placeholder="john" />
@@ -47,7 +67,8 @@ export default function NewUser() {
             <option value="no">No</option>
           </select>
         </div>
-        <button className="newUserButton">Create</button>
+        <input type="submit" value="Submit" />
+        {/* <button className="newUserButton">Create</button> */}
       </form>
     </div>
   );

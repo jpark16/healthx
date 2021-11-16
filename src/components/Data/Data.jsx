@@ -7,7 +7,7 @@ export function Api() {
     const [data, setData] = React.useState(null);
 
     React.useEffect(() => {
-        axios.get(`${baseURL}/sensor_get`).then((response) => {
+        axios.get(`${baseURL}/sensor_get_func`).then((response) => {
             console.log("testestest")
             setData(response.data);
         });
