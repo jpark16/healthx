@@ -13,7 +13,7 @@ export default function User() {
   return (
     <div className="user">
       <div className="userTitleContainer">
-        <h1 className="userTitle">Edit User</h1>
+        <h1 className="userTitle">Edit Patient</h1>
         <Link to="/newUser">
           <button className="userAddButton">Create</button>
         </Link>
@@ -28,18 +28,18 @@ export default function User() {
             />
             <div className="userShowTopTitle">
               <span className="userShowUsername">Anna Becker</span>
-              <span className="userShowUserTitle">Software Engineer</span>
+              <span className="userShowUserTitle"></span>
             </div>
           </div>
           <div className="userShowBottom">
             <span className="userShowTitle">Account Details</span>
             <div className="userShowInfo">
               <PermIdentity className="userShowIcon" />
-              <span className="userShowInfoTitle">annabeck99</span>
+              <span className="userShowInfoTitle">Patient ID: 0000</span>
             </div>
             <div className="userShowInfo">
               <CalendarToday className="userShowIcon" />
-              <span className="userShowInfoTitle">10.12.1999</span>
+              <span className="userShowInfoTitle">10/12/1999</span>
             </div>
             <span className="userShowTitle">Contact Details</span>
             <div className="userShowInfo">
@@ -61,10 +61,10 @@ export default function User() {
           <form className="userUpdateForm">
             <div className="userUpdateLeft">
               <div className="userUpdateItem">
-                <label>Username</label>
+                <label>Patient ID</label>
                 <input
                   type="text"
-                  placeholder="annabeck99"
+                  placeholder="0000"
                   className="userUpdateInput"
                 />
               </div>
@@ -93,10 +93,10 @@ export default function User() {
                 />
               </div>
               <div className="userUpdateItem">
-                <label>Address</label>
+                <label>Significant Health</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder="N/A"
                   className="userUpdateInput"
                 />
               </div>

@@ -6,7 +6,7 @@ import { userData } from "../../App";
 import WidgetSm from "../../components/widgetSm/WidgetSm";
 import WidgetLg from "../../components/widgetLg/WidgetLg";
 import Data from "../../components/Data/Data";
-import Location from "../../components/Data/Location";
+
 
 export default function Home() {
   return (
